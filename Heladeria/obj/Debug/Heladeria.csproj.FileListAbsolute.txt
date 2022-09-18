@@ -1,0 +1,14 @@
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\bin\Debug\Heladeria.exe.config
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\bin\Debug\Heladeria.exe
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\bin\Debug\Heladeria.pdb
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.csproj.AssemblyReference.cache
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.csproj.SuggestedBindingRedirects.cache
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.FronEnd.frm_ABM_Usuario.resources
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.FronEnd.frm_AltaUsuarios.resources
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.frm_Escritorio.resources
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.FronEnd.frm_Login.resources
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.Properties.Resources.resources
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.csproj.GenerateResource.cache
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.csproj.CoreCompileInputs.cache
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.exe
+C:\Users\conra\OneDrive\Escritorio\PAV1\Heladeria\obj\Debug\Heladeria.pdb

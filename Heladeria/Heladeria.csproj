@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB189C1E-0D18-41C5-8142-3E65A6E8A50C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Heladeria</RootNamespace>
+    <AssemblyName>Heladeria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackEnd\Be_acceso_datos.cs" />
+    <Compile Include="Clases\ComboBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\TextBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\TratamientoEspeciales.cs" />
+    <Compile Include="FronEnd\Usuario\frm_ABM_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FronEnd\Usuario\frm_ABM_Usuario.Designer.cs">
+      <DependentUpon>frm_ABM_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FronEnd\Usuario\frm_AltaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FronEnd\Usuario\frm_AltaUsuarios.Designer.cs">
+      <DependentUpon>frm_AltaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FronEnd\frm_Escitorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FronEnd\frm_Escitorio.Designer.cs">
+      <DependentUpon>frm_Escitorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FronEnd\frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FronEnd\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Usuario\Ne_usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FronEnd\Usuario\frm_ABM_Usuario.resx">
+      <DependentUpon>frm_ABM_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FronEnd\Usuario\frm_AltaUsuarios.resx">
+      <DependentUpon>frm_AltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FronEnd\frm_Escitorio.resx">
+      <DependentUpon>frm_Escitorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FronEnd\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
